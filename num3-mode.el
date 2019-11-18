@@ -103,6 +103,14 @@ the (place where) decimal point (would be) is."
 ;;;###autoload
 (define-globalized-minor-mode global-num3-mode num3-mode num3-mode)
 
+(defun global-num3-mode-cmhh nil
+  "Only enable num3-mode if variable `font-lock-mode' is enabled."
+  (if font-lock-mode
+      (add-to-list 'global-num3-mode-buffers
+                   (current-buffer))
+    (setq global-num3-mode-buffers
+          (delete (current-buffer) global-num3-mode-buffers))))
+
 (defconst num3--number-re
   ;; Hexadecimal and binary are both using the first capture group because we
   ;; group them both in four-digit groups.  There’s no explicit support for
