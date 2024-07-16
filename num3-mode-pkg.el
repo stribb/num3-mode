@@ -1,0 +1,2 @@
+;; Generated package description from num3-mode.el  -*- no-byte-compile: t -*-
+(define-package "num3-mode" "1.5.0.20221221.81242" "highlight groups of digits in long numbers" 'nil :commit "0e3b6990b91191333132fdd56b15c84cb57a7ff7" :url "https://elpa.gnu.org/packages/num3-mode.html" :authors '(("Felix Lee" . "felix8a@gmail.com") ("Michal Nazarewicz" . "mina86@mina86.com")) :maintainer '("Michal Nazarewicz" . "mina86@mina86.com") :keywords '("faces" "minor-mode"))
